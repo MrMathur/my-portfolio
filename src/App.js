@@ -127,11 +127,11 @@ function App() {
           <Experience 
             company="Georgia Institute of Technology"
             roles={[
-              {
-                role: "M.S. in Human-Computer Interaction",
-                year: "Aug 19 - May 21",
-                description: "School of Interactive Computing. Key courses included Introduction to Information Visualization, Data and Visual Analytics, Psychological Research Methods, and Study of Online Communities."
-              },
+              // {
+              //   role: "M.S. in Human-Computer Interaction",
+              //   year: "Aug 19 - May 21",
+              //   description: "School of Interactive Computing. Key courses included Introduction to Information Visualization, Data and Visual Analytics, Psychological Research Methods, and Study of Online Communities."
+              // },
               {
                 role: "Graduate Research Assistant",
                 year: "Jan 20 - Jul 20",
@@ -152,7 +152,7 @@ function App() {
                 description: "Redesigned the SAS Analytics Credit Scoring Tool. Conducted Contextual Interviews with Risk Analysts in Indian banks, and used those insights to create high-fidelity sketch mockups."
               }]} 
             />
-          <Experience 
+          {/* <Experience 
             company="Indian Institute of Technology Guwahati"
             roles={[
               {
@@ -164,7 +164,7 @@ function App() {
                 year: "Aug 16 - Dec 18",
                 description: "Key courses include Real Analysis, Mathematical Statistics, Scientific Computing, Modern Algebra, and Differential Geometry."
               }]} 
-            />
+            /> */}
           <Link title="View Full Resume" link="www.linkedin.com" />
         
           <div className="flex w-full lg:hidden mb-10">
