@@ -53,7 +53,7 @@ function App() {
       
           <About id="about-section" />
           
-          <SectionTitle id="projects-section" title="Projects" />
+          <SectionTitle title="projects" />
           <Project 
             title="QualVis: A Dashboard for Interaction Analysis"
             description="A dashboard to amplify, not automate, transcription in qualitative research. Users can interactively visualize one video dataset in four different ways using contemporary interactive visualization techniques."
@@ -85,7 +85,7 @@ function App() {
             link="https://www.mathworks.com/help/matlab/matlab_prog/profiling-for-improving-performance.html"
           />
 
-          <SectionTitle id="publications-section"  title="Publications" />
+          <SectionTitle title="publications" />
           <Publication 
             title="Interactive Transcription Techniques for Interaction Analysis"
             conference="ICLS 2022"
@@ -115,7 +115,7 @@ function App() {
             link="https://link.springer.com/chapter/10.1007/978-3-030-29387-1_2"
           />    
 
-          <SectionTitle id="resume-section"  title="Experience" />
+          <SectionTitle title="experience" />
           <Experience 
             company="The MathWorks, Inc."
             roles={[

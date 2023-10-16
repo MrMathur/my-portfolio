@@ -17,12 +17,12 @@ export default class FixedSection extends React.Component {
         <div className="flex w-1/3 pt-48 pb-24 flex-col justify-between items-start shrink-0 self-stretch">
           <div className="flex flex-col items-start gap-y-24 self-stretch">
             <Hero />
-            {/* <ul className="flex flex-col self-stretch gap-y-5">
+            <ul className="flex flex-col self-stretch gap-y-5">
               <NavigationLink section="about" active={true}/>
               <NavigationLink section="projects" active={false} />
               <NavigationLink section="publications" active={false} />
               <NavigationLink section="experience" active={false} />
-            </ul> */}
+            </ul>
           </div>
           <Contact />
         </div>
