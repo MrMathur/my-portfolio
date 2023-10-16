@@ -27,7 +27,7 @@ export default class Publication extends React.Component {
               <p className="text-slate-400 text-xl font-normal">
                 {this.props.authors ? this.props.authors.map((author, i) => <span key={i} className={author == "Arpit Mathur" ? "font-semibold" : ""}>{author}{i == this.props.authors.length - 1 ? '' : ', '}</span>) : null}
               </p>
-              <div className="hidden sm:block items-start">
+              <div className="block items-start">
                 {this.props.tags ? this.props.tags.map(tag => <Tag tag={tag} key={tag} />) : null}
               </div>
             </div>
