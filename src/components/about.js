@@ -28,7 +28,7 @@ export default class About extends React.Component {
           <p>
           Outside of work, I find my creativity unleashed in the realm of video game design and development. 
           You'll often find me diving into game jams, cooking up <Link title="quirky games" link="https://itch.io/profile/mrmathur" /> in just a weekend.
-          On the weekends, my heart belongs to The Arsenal., and when I'm not geeking out over tech and games, I enjoy playing the piano.
+          I love playing and watching football, and my heart belongs to the Arsenal. When I'm not geeking out over tech and games, I enjoy playing the piano.
           </p>
         </div>
       </div>
