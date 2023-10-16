@@ -167,7 +167,7 @@ function App() {
                 description: "Key courses include Real Analysis, Mathematical Statistics, Scientific Computing, Modern Algebra, and Differential Geometry."
               }]} 
             /> */}
-          <Link title="View Full Resume" link={Resume} />
+          <Link title="View Full Resume" link={Resume} type="block"/>
         
           <div className="flex w-full lg:hidden mb-10">
             <Contact />

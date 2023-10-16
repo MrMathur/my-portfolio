@@ -1,5 +1,6 @@
 import React from 'react';
 import Hero from './hero';
+import Link from './link';
 
 export default class About extends React.Component {
   constructor(props) {
@@ -16,19 +17,18 @@ export default class About extends React.Component {
             <Hero />
           </div>
           <p>
-            I am a dedicated UX Designer at MathWorks, where I apply my extensive knowledge and expertise to enhance user experiences.
-            My academic journey includes earning an MS in Human-Computer Interaction (HCI) from Georgia Tech and a B.Des from IIT Guwahati.
-            My educational background has equipped him with a deep understanding of the intricate relationship between humans and technology, through which I hope to be a valuable asset in crafting intuitive, user-centered solutions.  
+            My journey in User Experience started with my B.Des at the <Link title="Indian Institute of Technology, Guwahati" link="https://www.iitg.ac.in/design/"/>, where I got the opportunity to work on many interaction design projects, specifically in low-resource settings.
+            Driven by an itch to dig deeper, I decided to take a giant leap across the globe to pursue an M.S. in Human-Computer Interaction at the <Link title="Georgia Institute of Technology" link="https://mshci.gatech.edu/"/> in Atlanta. 
           </p>
           <p>
-            I strive to create designs that not only function flawlessly but also communicate effectively.
-            My commitment to putting users at the center of the design process ensures that every interaction is seamless and meaningful.
-            I am also passionate about working with data, and I spend a lot of time thinking about representing and visualizing data in the most effective way for users.
+            Graduate school broadened my horizons by giving me many opportunities to explore the intricacies of how humans interact with software. 
+            It also introduced me to the discipline of <Link title="Information Visualization" link="https://open.spotify.com/episode/1RN3IGtdBBpGVmOCX8Hevs?si=b2e3fe9fb94f48e8" />, which I am very passionate about. 
+            I am able to leverage this passion at my current role as a UX Designer at <Link title="The MathWorks, Inc." link="https://www.mathworks.com/"/>, where I work on improving Model Based Systems Engineering and Design workflows for customers across MATLAB and Simulink. 
           </p>
           <p>
-            Outside of the professional realm, I thrive on coding, prototyping, and pushing the boundaries of what's possible in UX design.
-            I also enjoy playing football, diving into video game development, and creating music.
-            These diverse interests enrich my creative approach to UX design, making me a well-rounded and innovative designer.
+          Outside of work, I find my creativity unleashed in the realm of video game design and development. 
+          You'll often find me diving into game jams, cooking up <Link title="quirky games" link="https://itch.io/profile/mrmathur" /> in just a weekend.
+          On the weekends, my heart belongs to The Arsenal., and when I'm not geeking out over tech and games, I enjoy playing the piano.
           </p>
         </div>
       </div>
