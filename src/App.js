@@ -16,10 +16,10 @@ import FixedSection from './components/fixed-section';
 import Contact from './components/contact';
 import Link from './components/link';
 
-import QualVis from './components/thumbnails/qualvis.png';
-import Quant from './components/thumbnails/quant.png';
-import DT2D from './components/thumbnails/dt2d.png';
-import DCE from './components/thumbnails/dce.png';
+import QualVis from './components/assets/thumbnails/qualvis.png';
+import Quant from './components/assets/thumbnails/quant.png';
+import DT2D from './components/assets/thumbnails/dt2d.png';
+import DCE from './components/assets/thumbnails/dce.png';
 
 import Resume from './components/assets/arpitmathurresume.pdf';
 
