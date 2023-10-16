@@ -21,6 +21,8 @@ import Quant from './components/thumbnails/quant.png';
 import DT2D from './components/thumbnails/dt2d.png';
 import DCE from './components/thumbnails/dce.png';
 
+import Resume from './components/assets/arpitmathurresume.pdf';
+
 function App() {
 
   function cursorStyling() {
@@ -165,7 +167,7 @@ function App() {
                 description: "Key courses include Real Analysis, Mathematical Statistics, Scientific Computing, Modern Algebra, and Differential Geometry."
               }]} 
             /> */}
-          <Link title="View Full Resume" link="www.linkedin.com" />
+          <Link title="View Full Resume" link={Resume} />
         
           <div className="flex w-full lg:hidden mb-10">
             <Contact />
