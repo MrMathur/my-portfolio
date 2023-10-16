@@ -122,7 +122,7 @@ function App() {
               {
                 role: "UX Designer",
                 year: "Jun 21 - Present",
-                description: "Supported multiple MATLAB and Simulink products, including MATLAB fixed-point workflows, Simulink Studio, and System Composer. Responsibilities included collaborative design events, wireframing, iterative prototyping and high-fidelity visual design."
+                description: "Supporting multiple MATLAB and Simulink products, including MATLAB fixed-point workflows, Simulink Studio, and System Composer. Responsibilities include collaborative design events, wireframing, iterative prototyping and high-fidelity visual design."
               }
             ]} />
 
