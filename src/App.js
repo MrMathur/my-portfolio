@@ -121,7 +121,7 @@ function App() {
             />    
           </div>
 
-          <div className='pt-24' name="experience">
+          <div className='pt-24 md:min-h-screen' name="experience">
             <SectionTitle title="experience" />
             <Experience 
               company="The MathWorks, Inc."
