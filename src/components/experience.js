@@ -7,7 +7,7 @@ export default class Experience extends React.Component {
 
   render() {
     return(
-      <div className="mt-4">
+      <div className="my-8">
         <div className="block sm:flex w-full px-4 sm:px-0">
           <div className="w-full sm:w-1/4"></div>
           <h2 className="w-full sm:w-3/4 text-slate-50 text-lg font-semibold">{this.props.company}</h2>

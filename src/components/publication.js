@@ -8,7 +8,7 @@ export default class Publication extends React.Component {
 
   render() {
     return(
-      <a href={this.props.link} target="_blank" className="group w-full block sm:rounded-lg hover:bg-slate-800 bg-slate-700 sm:bg-transparent py-2">
+      <a href={this.props.link} target="_blank" className="group w-full block sm:rounded-lg hover:bg-slate-800 bg-slate-700 sm:bg-transparent py-2 my-5">
         <div className="block sm:flex w-full px-4 sm:px-0">
           <div className="w-full sm:w-1/4 pr-0 sm:pr-8 ">          
           </div>
