@@ -11,9 +11,7 @@ export default class NavigationLink extends React.Component {
 
   render() {
     return(
-      <li className="text-slate-400 hover:text-orange-400 text-xl hover:font-semibold font-normal leading-none tracking-wide uppercase">
-        <button className={this.state.active ? "text-slate-50 font-semibold uppercase" : "uppercase"}>• {this.props.section}</button>
-      </li>
+      <Link className='text-slate-400 hover:text-orange-400 text-xl hover:font-semibold font-normal leading-none tracking-wide uppercase' activeClass="text-slate-50 font-semibold" to={this.props.section} spy={true} smooth={true} offset={8} duration={500} > • {this.props.section} </Link>                     
     );
   }
 }
