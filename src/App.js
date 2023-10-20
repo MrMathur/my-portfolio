@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import {
   enable,
@@ -6,6 +5,8 @@ import {
   isEnabled,
 } from 'cursor-flashlight';
 import AnimatedCursor from 'react-animated-cursor';
+import ReactGA from 'react-ga';
+import { useEffect } from 'react';
 
 import SectionTitle from './components/section-title';
 import About from './components/about';
@@ -23,7 +24,14 @@ import DCE from './components/assets/thumbnails/dce.png';
 
 import Resume from './components/assets/arpitmathurresume.pdf';
 
+const TRACKING_ID = "G-Q8KHWH9DG0";
+ReactGA.initialize(TRACKING_ID);
+
 function App() {
+
+  useEffect(() => {
+    ReactGA.pageview(window.location.pathname);
+  }, []);
 
   function cursorStyling() {
     enable({ size: '75vmax' });
