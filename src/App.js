@@ -56,7 +56,7 @@ function App() {
           <div className="pt-48" name="about">
             <About />
 
-            <Link title="→ View Full CV" link={Resume} type="block" />
+            {/* <Link title="→ Schedule 30-Minute Meeting" link="https://calendly.com/arpitmam-andrew/30min" type="block" /> */}
           </div>
 
           <div className="pt-24" name="projects">

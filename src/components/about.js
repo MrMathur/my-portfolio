@@ -20,22 +20,22 @@ export default class About extends React.Component {
             <a
               target="_blank"
               href="https://hcii.cmu.edu/"
-              class="w-full sm:w-3/4 text-slate-50 text-lg underline underline-offset-2 hover:text-orange-400 font-semibold"
+              class="w-full sm:w-3/4 text-slate-50  hover:underline hover:underline-offset-2 hover:text-orange-400 font-semibold"
             >
               Carnegie Mellon University's
             </a>{" "}
             Human-Computer Interaction Institute, my research focuses on
             Human-AI Collaboration, Healthcare, and Data Visualization. I’m
-            particularly interested in building building useful, responsible AI
-            tools that address real world problems in healthcare and improve
-            patient outcomes.
+            particularly interested in building useful, responsible AI tools
+            that address real world problems in healthcare and improve patient
+            outcomes.
           </p>
           <p>
             My journey in HCI started with my B.Des at the{" "}
             <a
               target="_blank"
               href="https://www.iitg.ac.in/design/"
-              class="w-full sm:w-3/4 text-slate-50 text-lg underline underline-offset-2 hover:text-orange-400 font-semibold"
+              class="w-full sm:w-3/4 text-slate-50  hover:underline hover:underline-offset-2 hover:text-orange-400 font-semibold"
             >
               Indian Institute of Technology, Guwahati
             </a>
@@ -46,7 +46,7 @@ export default class About extends React.Component {
             <a
               target="_blank"
               href="https://mshci.gatech.edu/"
-              class="w-full sm:w-3/4 text-slate-50 text-lg underline underline-offset-2 hover:text-orange-400 font-semibold"
+              class="w-full sm:w-3/4 text-slate-50  hover:underline hover:underline-offset-2 hover:text-orange-400 font-semibold"
             >
               Georgia Institute of Technology
             </a>{" "}
@@ -57,7 +57,7 @@ export default class About extends React.Component {
             <a
               target="_blank"
               href="https://www.mathworks.com/"
-              class="w-full sm:w-3/4 text-slate-50 text-lg underline underline-offset-2 hover:text-orange-400 font-semibold"
+              class="w-full sm:w-3/4 text-slate-50  hover:underline hover:underline-offset-2 hover:text-orange-400 font-semibold"
             >
               The MathWorks
             </a>
@@ -70,15 +70,15 @@ export default class About extends React.Component {
             <a
               target="_blank"
               href="https://itch.io/profile/mrmathur"
-              class="w-full sm:w-3/4 text-slate-50 text-lg underline underline-offset-2 hover:text-orange-400 font-semibold"
+              class="w-full sm:w-3/4 text-slate-50  hover:underline hover:underline-offset-2 hover:text-orange-400 font-semibold"
             >
-              gamejam submissions here
+              Gamejam Submissions here
             </a>
             . I love playing and watching football, and I'm a{" "}
             <a
               target="_blank"
               href="https://en.wikipedia.org/wiki/Arsenal_F.C."
-              class="w-full sm:w-3/4 text-slate-50 text-lg underline underline-offset-2 hover:text-orange-400 font-semibold"
+              class="w-full sm:w-3/4 text-slate-50  hover:underline hover:underline-offset-2 hover:text-orange-400 font-semibold"
             >
               Gooner Till I die
             </a>
