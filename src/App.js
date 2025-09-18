@@ -56,7 +56,11 @@ function App() {
           <div className="pt-48" name="about">
             <About />
 
-            {/* <Link title="→ Schedule 30-Minute Meeting" link="https://calendly.com/arpitmam-andrew/30min" type="block" /> */}
+            {/* <Link
+              title="→ Schedule 30-Minute Meeting"
+              link="https://calendly.com/arpitmam-andrew/30min"
+              type="block"
+            /> */}
           </div>
 
           <div className="pt-24" name="projects">
@@ -105,6 +109,95 @@ function App() {
 
           <div className="pt-24" name="publications">
             <SectionTitle title="publications" />
+            <Publication
+              title="A Human-Centered Approach to Identifying Promises, Risks, & Challenges of Text-to-Image Generative AI in Radiology"
+              conference="AIES 2025"
+              authors={[
+                "Katelyn Morrison",
+                "Arpit Mathur",
+                "Aidan Bradshaw",
+                "Tom Wartmann",
+                "Steven Lundi",
+                "Afrooz Zandifar",
+                "Weichang Dai",
+                "Kayhan Batmanghelich",
+                "Motahhare Eslami",
+                "Adam Perer",
+              ]}
+              tags={[
+                "Generative AI",
+                "Radiology",
+                "Healthcare Technology",
+                "Education",
+              ]}
+              link="https://arxiv.org/pdf/2507.16207"
+            />
+            <Publication
+              title="Exploratory Visual Analysis of Transcripts for Interaction Analysis in Human-Computer Interaction"
+              conference="CHI 2025"
+              authors={[
+                "Ben Rydal Shapiro",
+                "Rogers Hall",
+                "Arpit Mathur",
+                "Edwin Zhao",
+              ]}
+              tags={[
+                "HCI",
+                "Visualization",
+                "Qualitative Methods",
+                "Transcripts",
+              ]}
+              link="https://dl.acm.org/doi/10.1145/3706598.3713490"
+            />
+            <Publication
+              title="Clini-Compare: An Interactive Patient-Similarity Visualization Tool for Clinical Decision Support"
+              conference="CHI 2025 (WORKSHOP)"
+              authors={["Arpit Mathur", "Adam Perer"]}
+              tags={[
+                "Patient Similarity",
+                "Visualization",
+                "Decision Support",
+                "Healthcare Technology",
+              ]}
+              link="https://zenodo.org/records/15203352"
+            />
+            <Publication
+              title="Texture: Structured Exploration of Text Datasets"
+              conference="Arxiv"
+              authors={[
+                "Will Epperson",
+                "Arpit Mathur",
+                "Adam Perer",
+                "Dominik Moritz",
+              ]}
+              tags={[
+                "Text Visualization",
+                "Exploratory Data Analysis",
+                "Interactive Systems",
+                "Dataset Tools",
+              ]}
+              link="https://arxiv.org/pdf/2504.16898"
+            />
+            <Publication
+              title="Toward Interpretable 3D Diffusion in Radiology: Token-Wise Attribution for Text-to-CT Synthesis"
+              conference="MIDL 2025"
+              authors={[
+                "Aidan Bradshaw",
+                "Katelyn Morrison",
+                "Arpit Mathur",
+                "Weicheng Dai",
+                "Motahhare Eslami",
+                "Kayhan Batmanghelich",
+                "Adam Perer",
+              ]}
+              tags={[
+                "3D Diffusion",
+                "Explainable AI",
+                "Radiology",
+                "Text-to-Image",
+              ]}
+              link="https://openreview.net/pdf?id=DTYFRzRPQn"
+            />
             <Publication
               title="Turn charts for interaction analysis: Visually mapping the conversation floor"
               conference="ICLS 2024"
