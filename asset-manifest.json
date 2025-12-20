@@ -1,20 +1,24 @@
 {
   "files": {
     "main.css": "/static/css/main.e1c90065.css",
-    "main.js": "/static/js/main.7d5be7a8.js",
+    "main.js": "/static/js/main.c65fadd1.js",
     "static/js/787.128fc6e9.chunk.js": "/static/js/787.128fc6e9.chunk.js",
+    "static/media/genaixrad.png": "/static/media/genaixrad.e9bf6fa6dc178658ede7.png",
+    "static/media/clini-compare.pdf": "/static/media/clini-compare.3bc50411c2115c9369a3.pdf",
+    "static/media/phora.png": "/static/media/phora.158ae5418eee6a307476.png",
     "static/media/dce.png": "/static/media/dce.ebe66ab165a766f2d46f.png",
+    "static/media/clinicompare.png": "/static/media/clinicompare.69deb9787208f79a4f1d.png",
     "static/media/qualvis.png": "/static/media/qualvis.1d5b5a52ddf8fb813143.png",
     "static/media/arpitmathurresume.pdf": "/static/media/arpitmathurresume.5a9704742b90cf9697d0.pdf",
     "static/media/quant.png": "/static/media/quant.f01b8356e2fc50cdd002.png",
     "static/media/dt2d.png": "/static/media/dt2d.14c9e22d6a0c12657f12.png",
     "index.html": "/index.html",
     "main.e1c90065.css.map": "/static/css/main.e1c90065.css.map",
-    "main.7d5be7a8.js.map": "/static/js/main.7d5be7a8.js.map",
+    "main.c65fadd1.js.map": "/static/js/main.c65fadd1.js.map",
     "787.128fc6e9.chunk.js.map": "/static/js/787.128fc6e9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e1c90065.css",
-    "static/js/main.7d5be7a8.js"
+    "static/js/main.c65fadd1.js"
   ]
 }
