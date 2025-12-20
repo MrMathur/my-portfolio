@@ -13,12 +13,16 @@ import FixedSection from "./components/fixed-section";
 import Contact from "./components/contact";
 import Link from "./components/link";
 
+import GenAIxRadio from "./components/assets/thumbnails/genaixrad.png";
 import QualVis from "./components/assets/thumbnails/qualvis.png";
 import Quant from "./components/assets/thumbnails/quant.png";
 import DT2D from "./components/assets/thumbnails/dt2d.png";
 import DCE from "./components/assets/thumbnails/dce.png";
+import CliniCompare from "./components/assets/thumbnails/clinicompare.png";
+import Phora from "./components/assets/thumbnails/phora.png";
 
 import Resume from "./components/assets/arpitmathurresume.pdf";
+import CliniComparePaper from "./components/assets/papers/clini-compare.pdf";
 
 const TRACKING_ID = "G-Q8KHWH9DG0";
 ReactGA.initialize(TRACKING_ID);
@@ -66,7 +70,46 @@ function App() {
           <div className="pt-24" name="projects">
             <SectionTitle title="projects" />
             <Project
-              title="QualVis: A Dashboard for Interaction Analysis"
+              title="PHORA: AI-CDSS for PAH"
+              description="An interactive clinical decision-support system that helps clinicians and patients collaboratively reason about AI-based survival predictions in Pulmonary Arterial Hypertension."
+              imageUrl={Phora}
+              tags={[
+                "Healthcare AI",
+                "Data Visualization",
+                "Clinical Decision Support",
+              ]}
+              link="https://phora-user-study.web.app/dashboard/PID3?demo=1"
+            />
+
+            <Project
+              title="Clini-Compare: Interactive Patient Similarity for Clinical Decision Support"
+              description="An interactive visualization tool that helps physicians reason about complex cases by comparing semantically similar patients using unstructured radiology notes. Designed to support clinical sensemaking, trust, and decision-making."
+              imageUrl={CliniCompare}
+              tags={[
+                "Clinical Decision Support",
+                "Healthcare Visualization",
+                "NLP",
+              ]}
+              link={CliniComparePaper}
+            />
+
+            <Project
+              title="Text-to-CT Scan Generative AI"
+              description="A system that integrates a text-to-CT scan generative AI model into a medical imaging interface. The system lets radiologists prompt a text-guided model to generate synthetic 3D CT scans and interact with outputs in context."
+              imageUrl={GenAIxRadio}
+              tags={["Generative AI", "Medical Imaging", "Radiology"]}
+              link="https://arxiv.org/pdf/2507.16207"
+            />
+
+            <Project
+              title="Design Cost Estimation: Visualizing Cost Metrics for MATLAB Projects"
+              description="Profiling is a way to measure the time it takes to run your code and identify where MATLAB® spends the most time. After you identify which functions are consuming the most time, you can evaluate them for possible performance improvements."
+              imageUrl={DCE}
+              tags={["Data Visualization", "UX Design", "Figma"]}
+              link="https://www.mathworks.com/help/matlab/matlab_prog/profiling-for-improving-performance.html"
+            />
+            <Project
+              title="TranscriptExplorer: A Dashboard for Interaction Analysis"
               description="A dashboard to amplify, not automate, transcription in qualitative research. Users can interactively visualize one video dataset in four different ways using contemporary interactive visualization techniques."
               imageUrl={QualVis}
               tags={[
@@ -75,7 +118,7 @@ function App() {
                 "D3.JS",
                 "React.js",
               ]}
-              link="https://mrmathur.github.io/react-iv-dashboard/"
+              link="https://dl.acm.org/doi/pdf/10.1145/3706598.3713490"
             />
             <Project
               title="Visualizing Quantum Physics"
@@ -97,13 +140,6 @@ function App() {
                 "Angular.js",
               ]}
               link="https://github.com/TID-Lab/aggie"
-            />
-            <Project
-              title="Design Cost Estimation: Visualizing Cost Metrics for MATLAB Projects"
-              description="Profiling is a way to measure the time it takes to run your code and identify where MATLAB® spends the most time. After you identify which functions are consuming the most time, you can evaluate them for possible performance improvements."
-              imageUrl={DCE}
-              tags={["Data Visualization", "UX Design", "Figma"]}
-              link="https://www.mathworks.com/help/matlab/matlab_prog/profiling-for-improving-performance.html"
             />
           </div>
 
