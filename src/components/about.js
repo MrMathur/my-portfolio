@@ -78,13 +78,13 @@ export default class About extends React.Component {
             >
               Gamejam Submissions here
             </a>
-            . I love playing and watching football, and I'm a{" "}
+            . I love playing and watching football, and I'm an avid{" "}
             <a
               target="_blank"
               href="https://en.wikipedia.org/wiki/Arsenal_F.C."
               class="w-full sm:w-3/4 text-slate-50  hover:underline hover:underline-offset-2 hover:text-orange-400 font-semibold"
             >
-              Gooner Till I die
+              Arsenal fan
             </a>
             .
           </p>
