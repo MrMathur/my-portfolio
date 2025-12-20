@@ -24,45 +24,49 @@ export default class About extends React.Component {
             >
               Carnegie Mellon University's
             </a>{" "}
-            Human-Computer Interaction Institute, my research focuses on
-            Human-AI Collaboration, Healthcare, and Data Visualization. I’m
-            particularly interested in building useful, responsible AI tools
-            that address real world problems in healthcare and improve patient
-            outcomes.
+            Human-Computer Interaction Institute, I design and build
+            human-centered AI systems for high-stakes domains, like healthcare.
+            My work sits at the intersection of Human-AI Collaboration, Data
+            Visualization, and Applied Machine Learning, with a strong emphasis
+            on turning research ideas into working, usable tools.
           </p>
           <p>
-            My journey in HCI started with my B.Des at the{" "}
+            I build end-to-end prototypes that help people reason with complex
+            AI outputs, bridge expertise gaps between experts and non-experts,
+            and support real decision-making. Across my projects, I work
+            hands-on across the stack, from interaction design and front-end
+            systems to model integration and evaluation with real users.
+          </p>
+          <p>
+            Before my Ph.D., I got my B.Des from the{" "}
             <a
               target="_blank"
               href="https://www.iitg.ac.in/design/"
               class="w-full sm:w-3/4 text-slate-50  hover:underline hover:underline-offset-2 hover:text-orange-400 font-semibold"
             >
               Indian Institute of Technology, Guwahati
-            </a>
-            , where I got the opportunity to work on many interaction design
-            projects, specifically in low-resource settings. Driven by an itch
-            to dig deeper, I decided to take a giant leap across the globe to
-            pursue an M.S. in HCI at the{" "}
+            </a>{" "}
+            and earned an M.S. in HCI from the{" "}
             <a
               target="_blank"
               href="https://mshci.gatech.edu/"
               class="w-full sm:w-3/4 text-slate-50  hover:underline hover:underline-offset-2 hover:text-orange-400 font-semibold"
             >
               Georgia Institute of Technology
-            </a>{" "}
-            in Atlanta.
-          </p>
-          <p>
-            Before starting my Ph.D., I worked as a UX Designer at{" "}
+            </a>
+            . Through these experiences, I developed a strong foundation in
+            applied HCI and systems thinking. I’ve also worked as a UX Designer
+            at{" "}
             <a
               target="_blank"
               href="https://www.mathworks.com/"
               class="w-full sm:w-3/4 text-slate-50  hover:underline hover:underline-offset-2 hover:text-orange-400 font-semibold"
             >
-              The MathWorks
+              MathWorks
             </a>
-            {""}, where I improved Model-Based Systems Engineering and Design
-            workflows for MATLAB and Simulink users.
+            , improving Model-Based Systems Engineering workflows for MATLAB and
+            Simulink, which shaped how I think about designing tools for
+            technical, expert users at scale.
           </p>
           <p>
             Outside of academia, I enjoy video game design and development. You
