@@ -37,7 +37,9 @@
 		</a>
 	{/if}
 
-	<img src={meta.thumbnail} alt="{meta.title} project thumbnail" class="mt-10 w-full aspect-video rounded-lg" />
+	<div class="tint mt-10 rounded-lg">
+		<img src={meta.thumbnail} alt="{meta.title} project thumbnail" class="block w-full aspect-video" />
+	</div>
 
 	<article
 		class="prose prose-invert prose-lg mt-12 max-w-none prose-a:text-accent prose-headings:text-content prose-p:text-content-dim prose-li:text-content-dim prose-strong:text-content"

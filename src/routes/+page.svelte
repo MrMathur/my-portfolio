@@ -31,11 +31,11 @@
 
 <div class="h-screen text-content flex justify-center">
 	<FixedSection />
-	<div class="flex container pointer-events-none items-start gap-y-5 shrink-0 z-10">
+	<div class="flex container lg:px-8 pointer-events-none items-start gap-y-5 shrink-0 z-10">
 		<div class="hidden lg:flex w-1/3 shrink-0 self-stretch"></div>
 
 		<main id="main-content" class="flex pointer-events-auto w-full lg:w-2/3 lg:pb-24 flex-col items-start">
-			<section aria-label="About" class="pt-48" id="about">
+			<section aria-label="About" class="pt-48 lg:pt-[min(12rem,19.2vh)]" id="about">
 				<About />
 			</section>
 
@@ -61,7 +61,7 @@
 				<TextLink title="→ View Full CV" link="/arpitmathurresume.pdf" block />
 			</section>
 
-			<div class="flex w-full lg:hidden mb-10">
+			<div class="flex w-full lg:hidden lg:short:flex mb-10">
 				<Contact />
 			</div>
 		</main>

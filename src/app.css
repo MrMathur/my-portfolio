@@ -1,6 +1,9 @@
 @import 'tailwindcss';
 @plugin '@tailwindcss/typography';
 
+/* Desktop windows too short for the full identity column */
+@custom-variant short (@media (max-height: 949px));
+
 :root {
 	--c-accent: #fdba74; /* orange-300 */
 	--c-surface: #1e293b; /* slate-800 */
@@ -25,6 +28,66 @@
 html {
 	scroll-behavior: smooth;
 }
+
+/* Images carry an accent-orange tint and reveal their real color on hover
+   (or when their card is hovered/focused). `.tint` wraps the <img>; in markdown
+   the paragraph around a standalone image plays that role. */
+.tint,
+.prose p:has(> img:only-child) {
+	position: relative;
+	isolation: isolate;
+	overflow: hidden;
+}
+
+.prose p:has(> img:only-child) {
+	width: fit-content;
+	border-radius: 0.5rem;
+}
+
+.prose p:has(> img:only-child) > img {
+	display: block;
+	margin: 0;
+}
+
+.tint::after,
+.prose p:has(> img:only-child)::after {
+	content: '';
+	position: absolute;
+	inset: 0;
+	background: var(--c-accent);
+	mix-blend-mode: color;
+	pointer-events: none;
+	transition: opacity 300ms cubic-bezier(0, 0, 0.2, 1);
+}
+
+.tint img,
+.prose p:has(> img:only-child) > img {
+	filter: brightness(0.85);
+	transition: filter 300ms cubic-bezier(0, 0, 0.2, 1);
+}
+
+@media (hover: hover) {
+	.tint:hover::after,
+	.group:hover .tint::after,
+	.prose p:has(> img:only-child):hover::after {
+		opacity: 0;
+	}
+
+	.tint:hover img,
+	.group:hover .tint img,
+	.prose p:has(> img:only-child):hover > img {
+		filter: none;
+	}
+}
+
+.group:focus-visible .tint::after {
+	opacity: 0;
+}
+
+.group:focus-visible .tint img {
+	filter: none;
+}
+
 
 body {
 	margin: 0;
