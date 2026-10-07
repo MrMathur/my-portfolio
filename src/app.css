@@ -1,37 +1,56 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import 'tailwindcss';
+@plugin '@tailwindcss/typography';
 
 :root {
-  --c-accent:       theme('colors.orange.300');  /* #fdba74 */
-  --c-surface:      theme('colors.slate.800');   /* #1e293b */
-  --c-surface-deep: theme('colors.slate.900');   /* #0f172a */
-  --c-text:         theme('colors.slate.50');    /* #f8fafc */
-  --c-text-card:    theme('colors.slate.100');   /* #f1f5f9 */
-  --c-text-dim:     theme('colors.slate.300');   /* #cbd5e1 */
-  --c-icon:         theme('colors.slate.400');   /* #94a3b8 */
+	--c-accent: #fdba74; /* orange-300 */
+	--c-surface: #1e293b; /* slate-800 */
+	--c-surface-deep: #0f172a; /* slate-900 */
+	--c-text: #f8fafc; /* slate-50 */
+	--c-text-card: #f1f5f9; /* slate-100 */
+	--c-text-dim: #cbd5e1; /* slate-300 */
+	--c-icon: #94a3b8; /* slate-400 */
+}
+
+@theme inline {
+	--font-bai: 'Bai Jamjuree', sans-serif;
+	--color-accent: var(--c-accent);
+	--color-surface: var(--c-surface);
+	--color-surface-deep: var(--c-surface-deep);
+	--color-content: var(--c-text);
+	--color-content-card: var(--c-text-card);
+	--color-content-dim: var(--c-text-dim);
+	--color-content-icon: var(--c-icon);
+}
+
+html {
+	scroll-behavior: smooth;
 }
 
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  background-color: var(--c-surface);
+	margin: 0;
+	font-family:
+		-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell',
+		'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	background-color: var(--c-surface);
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+	font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }
 
 @media (prefers-reduced-motion: reduce) {
-  *, *::before, *::after {
-    animation-duration: 0.01ms !important;
-    animation-iteration-count: 1 !important;
-    transition-duration: 0.01ms !important;
-    scroll-behavior: auto !important;
-  }
+	*,
+	*::before,
+	*::after {
+		animation-duration: 0.01ms !important;
+		animation-iteration-count: 1 !important;
+		transition-duration: 0.01ms !important;
+		scroll-behavior: auto !important;
+	}
+}
+
+* {
+	font-family: 'Bai Jamjuree', sans-serif;
 }
