@@ -12,10 +12,10 @@
 	>
 {/snippet}
 
-<div class="flex justify-center">
-	<div class="w-0 lg:w-1/4"></div>
+<div class="flex w-full px-4 sm:gap-x-6">
+	<div class="hidden sm:block sm:w-1/4 sm:shrink-0"></div>
 	<div
-		class="w-full px-4 sm:px-0 sm:w-3/4 flex flex-col self-stretch gap-y-2.5 text-content-dim text-xl font-normal"
+		class="flex-1 min-w-0 flex flex-col self-stretch gap-y-2.5 text-content-dim text-xl font-normal"
 	>
 		<div class="block lg:hidden mb-20">
 			<Hero />

@@ -7,7 +7,7 @@
 
 <a
 	href="/projects/{project.slug}/"
-	class="group w-full flex flex-col sm:flex-row sm:items-start rounded-lg hover:bg-surface-deep bg-transparent py-3 px-4 sm:p-4 my-3 gap-y-3 sm:gap-x-5 transition-colors duration-150"
+	class="group w-full flex flex-col sm:flex-row sm:items-start rounded-lg hover:bg-surface-deep bg-transparent py-3 px-4 sm:p-4 my-3 gap-y-3 sm:gap-x-6 transition-colors duration-150"
 >
 	<div class="tint rounded w-full sm:w-1/4 sm:shrink-0">
 		<img

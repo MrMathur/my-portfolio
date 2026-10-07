@@ -5,12 +5,12 @@
 </script>
 
 <div class="my-10">
-	<div class="flex w-full px-4 sm:px-0 mb-3">
-		<div class="w-0 sm:w-1/4"></div>
-		<h3 class="w-full sm:w-3/4 text-content text-base font-semibold">{job.company}</h3>
+	<div class="flex w-full px-4 mb-3 sm:gap-x-6">
+		<div class="hidden sm:block sm:w-1/4 sm:shrink-0"></div>
+		<h3 class="flex-1 min-w-0 text-content text-base font-semibold">{job.company}</h3>
 	</div>
 	{#each job.roles as role}
-		<div class="flex flex-col sm:flex-row sm:items-start w-full px-4 sm:px-0 mt-4 gap-y-1 sm:gap-x-6">
+		<div class="flex flex-col sm:flex-row sm:items-start w-full px-4 mt-4 gap-y-1 sm:gap-x-6">
 			<div class="sm:w-1/4 sm:shrink-0 sm:text-right sm:pt-0.5">
 				<p class="text-content-dim text-xs font-normal tracking-widest uppercase">{role.year}</p>
 			</div>

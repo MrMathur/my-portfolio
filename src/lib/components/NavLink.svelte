@@ -13,5 +13,5 @@
 		active ? 'text-content font-semibold' : 'text-content-dim font-normal'
 	]}
 >
-	• {section}
+	{section}
 </a>

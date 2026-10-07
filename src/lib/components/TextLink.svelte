@@ -5,9 +5,11 @@
 </script>
 
 {#if block}
-	<div class="flex w-full mt-4 px-4 sm:px-0">
-		<div class="w-0 sm:w-1/4"></div>
-		<a target="_blank" rel="noopener noreferrer" href={link} class={cls}>{title}</a>
+	<div class="flex w-full mt-4 px-4 sm:gap-x-6">
+		<div class="hidden sm:block sm:w-1/4 sm:shrink-0"></div>
+		<div class="flex-1 min-w-0">
+			<a target="_blank" rel="noopener noreferrer" href={link} class={cls}>{title}</a>
+		</div>
 	</div>
 {:else}
 	<a target="_blank" rel="noopener noreferrer" href={link} class={cls}>{title}</a>
