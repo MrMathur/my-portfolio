@@ -1,8 +1,6 @@
 import "./App.css";
-import { enable, disable, isEnabled } from "cursor-flashlight";
+import { enable } from "cursor-flashlight";
 import AnimatedCursor from "react-animated-cursor";
-import ReactGA from "react-ga";
-import { useEffect } from "react";
 
 import SectionTitle from "./components/section-title";
 import About from "./components/about";
@@ -24,15 +22,12 @@ import Phora from "./components/assets/thumbnails/phora.png";
 import Resume from "./components/assets/arpitmathurresume.pdf";
 import CliniComparePaper from "./components/assets/papers/clini-compare.pdf";
 
-const TRACKING_ID = "G-Q8KHWH9DG0";
-ReactGA.initialize(TRACKING_ID);
-
 function App() {
-  useEffect(() => {
-    ReactGA.pageview(window.location.pathname);
-  }, []);
 
   function cursorStyling() {
+    const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    if (prefersReducedMotion) return null;
+
     enable({ size: "75vmax" });
 
     return (
@@ -49,15 +44,22 @@ function App() {
   }
 
   return (
-    <div className="App h-screen text-slate-50 flex justify-center">
+    <div className="App h-screen text-content flex justify-center">
+      <a
+        href="#main-content"
+        className="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-50 focus:px-4 focus:py-2 focus:bg-accent focus:text-slate-900 focus:font-semibold focus:rounded"
+      >
+        Skip to main content
+      </a>
+
       {cursorStyling()}
 
       <FixedSection />
       <div className="flex container pointer-events-none items-start gap-y-5 shrink-0 z-10">
         <div className="hidden lg:flex w-1/3 shrink-0 self-stretch"></div>
 
-        <div className="flex pointer-events-auto w-full lg:w-2/3 lg:pb-24 flex-col items-start">
-          <div className="pt-48" name="about">
+        <main id="main-content" className="flex pointer-events-auto w-full lg:w-2/3 lg:pb-24 flex-col items-start">
+          <section aria-label="About" className="pt-48" id="about" name="about">
             <About />
 
             {/* <Link
@@ -65,9 +67,9 @@ function App() {
               link="https://calendly.com/arpitmam-andrew/30min"
               type="block"
             /> */}
-          </div>
+          </section>
 
-          <div className="pt-24" name="projects">
+          <section aria-label="Projects" className="pt-24" id="projects" name="projects">
             <SectionTitle title="projects" />
             <Project
               title="PHORA: AI-CDSS for PAH"
@@ -141,9 +143,9 @@ function App() {
               ]}
               link="https://github.com/TID-Lab/aggie"
             />
-          </div>
+          </section>
 
-          <div className="pt-24" name="publications">
+          <section aria-label="Publications" className="pt-24" id="publications" name="publications">
             <SectionTitle title="publications" />
             <Publication
               title="A Human-Centered Approach to Identifying Promises, Risks, & Challenges of Text-to-Image Generative AI in Radiology"
@@ -308,9 +310,9 @@ function App() {
               ]}
               link="https://link.springer.com/chapter/10.1007/978-3-030-29387-1_2"
             />
-          </div>
+          </section>
 
-          <div className="pt-24 md:min-h-screen" name="experience">
+          <section aria-label="Experience" className="pt-24 md:min-h-screen" id="experience" name="experience">
             <SectionTitle title="experience" />
             <Experience
               company="Carnegie Mellon University"
@@ -365,12 +367,12 @@ function App() {
               ]}
             />
             <Link title="→ View Full CV" link={Resume} type="block" />
-          </div>
+          </section>
 
           <div className="flex w-full lg:hidden mb-10">
             <Contact />
           </div>
-        </div>
+        </main>
       </div>
     </div>
   );

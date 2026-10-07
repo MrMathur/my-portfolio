@@ -1,6 +1,5 @@
 import React from "react";
 import Hero from "./hero";
-import Link from "./link";
 
 export default class About extends React.Component {
   constructor(props) {
@@ -11,7 +10,7 @@ export default class About extends React.Component {
     return (
       <div className="flex justify-center">
         <div className="w-0 lg:w-1/4 "></div>
-        <div className="w-full px-4 sm:px-0 sm:w-3/4 flex flex-col self-stretch gap-y-2.5 text-slate-400 text-xl font-normal">
+        <div className="w-full px-4 sm:px-0 sm:w-3/4 flex flex-col self-stretch gap-y-2.5 text-content-dim text-xl font-normal">
           <div className="block lg:hidden mb-20">
             <Hero />
           </div>
@@ -19,8 +18,9 @@ export default class About extends React.Component {
             As a Ph.D. student at{" "}
             <a
               target="_blank"
+              rel="noopener noreferrer"
               href="https://hcii.cmu.edu/"
-              class="w-full sm:w-3/4 text-slate-50  hover:underline hover:underline-offset-2 hover:text-orange-400 font-semibold"
+              className="w-full sm:w-3/4 text-content  hover:underline hover:underline-offset-2 hover:text-accent font-semibold transition-colors duration-150"
             >
               Carnegie Mellon University's
             </a>{" "}
@@ -41,16 +41,18 @@ export default class About extends React.Component {
             Before my Ph.D., I got my B.Des from the{" "}
             <a
               target="_blank"
+              rel="noopener noreferrer"
               href="https://www.iitg.ac.in/design/"
-              class="w-full sm:w-3/4 text-slate-50  hover:underline hover:underline-offset-2 hover:text-orange-400 font-semibold"
+              className="w-full sm:w-3/4 text-content  hover:underline hover:underline-offset-2 hover:text-accent font-semibold transition-colors duration-150"
             >
               Indian Institute of Technology, Guwahati
             </a>{" "}
             and earned an M.S. in HCI from the{" "}
             <a
               target="_blank"
+              rel="noopener noreferrer"
               href="https://mshci.gatech.edu/"
-              class="w-full sm:w-3/4 text-slate-50  hover:underline hover:underline-offset-2 hover:text-orange-400 font-semibold"
+              className="w-full sm:w-3/4 text-content  hover:underline hover:underline-offset-2 hover:text-accent font-semibold transition-colors duration-150"
             >
               Georgia Institute of Technology
             </a>
@@ -59,8 +61,9 @@ export default class About extends React.Component {
             at{" "}
             <a
               target="_blank"
+              rel="noopener noreferrer"
               href="https://www.mathworks.com/"
-              class="w-full sm:w-3/4 text-slate-50  hover:underline hover:underline-offset-2 hover:text-orange-400 font-semibold"
+              className="w-full sm:w-3/4 text-content  hover:underline hover:underline-offset-2 hover:text-accent font-semibold transition-colors duration-150"
             >
               MathWorks
             </a>
@@ -73,16 +76,18 @@ export default class About extends React.Component {
             can find some of my{" "}
             <a
               target="_blank"
+              rel="noopener noreferrer"
               href="https://itch.io/profile/mrmathur"
-              class="w-full sm:w-3/4 text-slate-50  hover:underline hover:underline-offset-2 hover:text-orange-400 font-semibold"
+              className="w-full sm:w-3/4 text-content  hover:underline hover:underline-offset-2 hover:text-accent font-semibold transition-colors duration-150"
             >
               Gamejam Submissions here
             </a>
             . I love playing and watching football, and I'm an avid{" "}
             <a
               target="_blank"
+              rel="noopener noreferrer"
               href="https://en.wikipedia.org/wiki/Arsenal_F.C."
-              class="w-full sm:w-3/4 text-slate-50  hover:underline hover:underline-offset-2 hover:text-orange-400 font-semibold"
+              className="w-full sm:w-3/4 text-content  hover:underline hover:underline-offset-2 hover:text-accent font-semibold transition-colors duration-150"
             >
               Arsenal fan
             </a>

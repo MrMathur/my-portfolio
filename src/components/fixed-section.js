@@ -14,12 +14,14 @@ export default class FixedSection extends React.Component {
         <div className="flex w-1/3 pt-48 pb-24 flex-col justify-between items-start shrink-0 self-stretch">
           <div className="flex flex-col items-start gap-y-24 self-stretch">
             <Hero />
-            <div className="flex flex-col self-stretch gap-y-5">
-              <NavigationLink section="about" />
-              <NavigationLink section="projects" />
-              <NavigationLink section="publications" />
-              <NavigationLink section="experience" />              
-            </div>
+            <nav aria-label="Main navigation">
+              <div className="flex flex-col self-stretch gap-y-5">
+                <NavigationLink section="about" />
+                <NavigationLink section="projects" />
+                <NavigationLink section="publications" />
+                <NavigationLink section="experience" />
+              </div>
+            </nav>
           </div>
           <Contact />
         </div>
