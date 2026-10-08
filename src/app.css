@@ -29,28 +29,15 @@ html {
 	scroll-behavior: smooth;
 }
 
-/* Images carry an accent-orange tint and reveal their real color on hover
-   (or when their card is hovered/focused). `.tint` wraps the <img>; in markdown
-   the paragraph around a standalone image plays that role. */
-.tint,
-.prose p:has(> img:only-child) {
+/* Card and headshot images carry an accent-orange tint and reveal their real
+   color on hover (or when their card is hovered/focused). `.tint` wraps the <img>. */
+.tint {
 	position: relative;
 	isolation: isolate;
 	overflow: hidden;
 }
 
-.prose p:has(> img:only-child) {
-	width: fit-content;
-	border-radius: 0.5rem;
-}
-
-.prose p:has(> img:only-child) > img {
-	display: block;
-	margin: 0;
-}
-
-.tint::after,
-.prose p:has(> img:only-child)::after {
+.tint::after {
 	content: '';
 	position: absolute;
 	inset: 0;
@@ -60,22 +47,19 @@ html {
 	transition: opacity 300ms cubic-bezier(0, 0, 0.2, 1);
 }
 
-.tint img,
-.prose p:has(> img:only-child) > img {
+.tint img {
 	filter: brightness(0.85);
 	transition: filter 300ms cubic-bezier(0, 0, 0.2, 1);
 }
 
 @media (hover: hover) {
 	.tint:hover::after,
-	.group:hover .tint::after,
-	.prose p:has(> img:only-child):hover::after {
+	.group:hover .tint::after {
 		opacity: 0;
 	}
 
 	.tint:hover img,
-	.group:hover .tint img,
-	.prose p:has(> img:only-child):hover > img {
+	.group:hover .tint img {
 		filter: none;
 	}
 }
@@ -86,6 +70,47 @@ html {
 
 .group:focus-visible .tint img {
 	filter: none;
+}
+
+/* Project thumbnails with a hover variant: the hover image is stacked on top
+   and crossfades in. Both images share size and framing, so it reads as one
+   image changing color. Used instead of `.tint`. */
+.thumb {
+	position: relative;
+	overflow: hidden;
+}
+
+.thumb-hover {
+	position: absolute;
+	inset: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	opacity: 0;
+	transition: opacity 0.3s ease;
+	pointer-events: none;
+}
+
+@media (hover: hover) {
+	.group:hover .thumb-hover {
+		opacity: 1;
+	}
+}
+
+.group:focus-visible .thumb-hover {
+	opacity: 1;
+}
+
+/* Standalone images in project write-ups: rounded, shown in true color */
+.prose p:has(> img:only-child) {
+	width: fit-content;
+	border-radius: 0.5rem;
+	overflow: hidden;
+}
+
+.prose p:has(> img:only-child) > img {
+	display: block;
+	margin: 0;
 }
 
 

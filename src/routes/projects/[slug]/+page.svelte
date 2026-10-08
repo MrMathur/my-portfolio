@@ -37,7 +37,7 @@
 		</a>
 	{/if}
 
-	<div class="tint mt-10 rounded-lg">
+	<div class="mt-10 rounded-lg overflow-hidden">
 		<img src={meta.thumbnail} alt="{meta.title} project thumbnail" class="block w-full aspect-video" />
 	</div>
 

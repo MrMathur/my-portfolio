@@ -5,6 +5,7 @@ export interface ProjectMeta {
 	title: string;
 	summary: string;
 	thumbnail: string;
+	thumbnailHover?: string;
 	tags: string[];
 	link?: string;
 	linkLabel?: string;

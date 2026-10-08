@@ -21,37 +21,21 @@
 			<Hero />
 		</div>
 		<p>
-			As a Ph.D. student at {@render ext('https://hcii.cmu.edu/', "Carnegie Mellon University's")}
-			Human-Computer Interaction Institute, I design and build human-centered AI systems for high-stakes
-			domains, like healthcare. My work sits at the intersection of Human-AI Collaboration, Data Visualization,
-			and Applied Machine Learning, with a strong emphasis on turning research ideas into working, usable tools.
+			Hi, I'm Arpit! I'm a Ph.D. student at {@render ext('https://hcii.cmu.edu/', "Carnegie Mellon University's")}
+			Human-Computer Interaction Institute, advised by {@render ext('https://perer.org/', 'Adam Perer')}. I'm looking
+			for <span class="text-content font-semibold">research internships for Summer 2027</span>.
 		</p>
 		<p>
-			I build end-to-end prototypes that help people reason with complex AI outputs, bridge expertise gaps
-			between experts and non-experts, and support real decision-making. Across my projects, I work hands-on
-			across the stack, from interaction design and front-end systems to model integration and evaluation with
-			real users.
+			I design and build human-centered AI systems for high-stakes domains like healthcare. My work combines
+			Human-AI Collaboration, Data Visualization, and Applied Machine Learning. I build end-to-end prototypes, with my skillset spanning
+			user research, interaction design, front-end development, and evaluation with real users.
 		</p>
 		<p>
-			Before my Ph.D., I got my B.Des from the {@render ext(
-				'https://www.iitg.ac.in/design/',
-				'Indian Institute of Technology, Guwahati'
-			)} and earned an M.S. in HCI from the {@render ext(
-				'https://mshci.gatech.edu/',
-				'Georgia Institute of Technology'
-			)}. Through these experiences, I developed a strong foundation in applied HCI and systems thinking. I’ve
-			also worked as a UX Designer at {@render ext('https://www.mathworks.com/', 'MathWorks')}, improving
-			Model-Based Systems Engineering workflows for MATLAB and Simulink, which shaped how I think about designing
-			tools for technical, expert users at scale.
-		</p>
-		<p>
-			Outside of academia, I enjoy video game design and development. You can find some of my {@render ext(
-				'https://itch.io/profile/mrmathur',
-				'Gamejam Submissions here'
-			)}. I love playing and watching football, and I'm an avid {@render ext(
-				'https://en.wikipedia.org/wiki/Arsenal_F.C.',
-				'Arsenal fan'
-			)}.
+			Before CMU, I earned a B.Des from {@render ext('https://www.iitg.ac.in/design/', 'IIT Guwahati')} and an M.S.
+			in HCI from {@render ext('https://mshci.gatech.edu/', 'Georgia Tech')}. I worked as a UX Designer at
+			{@render ext('https://www.mathworks.com/', 'MathWorks')} on MATLAB and Simulink.</p>
+			<p> Outside research, I like making {@render ext('https://itch.io/profile/mrmathur', 'games')} and am an avid
+			{@render ext('https://en.wikipedia.org/wiki/Arsenal_F.C.', 'Arsenal fan')}.
 		</p>
 	</div>
 </div>
