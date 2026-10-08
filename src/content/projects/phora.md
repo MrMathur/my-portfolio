@@ -9,7 +9,7 @@ order: 1
 
 | | |
 |---|---|
-| **My role** | Led the formative study, system design, and evaluation study design; conducted all data analysis. Chanidapa Klinhom provided clinical expertise and supported data collection. |
+| **My role** | Led the formative study, system design, and evaluation study design; conducted all data analysis. Co-authors provided clinical expertise and supported data collection. |
 | **Methods** | Semi-structured interviews · design probes · thematic analysis and affinity diagramming · personas · interactive visualization design · think-aloud · mixed-methods evaluation (paired Wilcoxon signed-rank) |
 
 <video src="/images/phora/video_figure.mp4" class="w-full rounded-lg" controls preload="metadata" playsinline aria-label="ourPHORA demo video"></video>
