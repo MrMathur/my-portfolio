@@ -5,5 +5,5 @@ thumbnail: /thumbnails/clinicompare.png
 tags: [Clinical Decision Support, Healthcare Visualization, NLP]
 link: /papers/clini-compare.pdf
 linkLabel: Read paper
-order: 2
+order: 4
 ---

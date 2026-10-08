@@ -11,7 +11,7 @@
 	<meta name="description" content={meta.summary} />
 </svelte:head>
 
-<main id="main-content" class="text-content mx-auto max-w-3xl px-4 sm:px-6 pt-24 pb-24">
+<main id="main-content" class="text-content w-full mx-auto max-w-3xl lg:max-w-none px-4 sm:px-6 lg:px-4 pt-24 lg:pt-[min(12rem,19.2vh)] pb-24">
 	<a
 		href="/#projects"
 		class="text-content-dim text-xs tracking-widest uppercase hover:text-accent transition-colors duration-150"

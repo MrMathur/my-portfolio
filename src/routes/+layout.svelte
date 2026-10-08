@@ -1,6 +1,8 @@
 <script lang="ts">
 	import '../app.css';
 	import { onMount } from 'svelte';
+	import { onNavigate } from '$app/navigation';
+	import FixedSection from '#lib/components/FixedSection.svelte';
 
 	let { children } = $props();
 
@@ -14,6 +16,18 @@
 		});
 		return () => disable?.();
 	});
+
+	// Crossfade the right column between pages; the sidebar is identical on both sides so it stays still.
+	onNavigate((navigation) => {
+		if (!document.startViewTransition) return;
+		if (navigation.from?.url.pathname === navigation.to?.url.pathname) return;
+		return new Promise((resolve) => {
+			document.startViewTransition(async () => {
+				resolve();
+				await navigation.complete;
+			});
+		});
+	});
 </script>
 
 <a
@@ -23,4 +37,12 @@
 	Skip to main content
 </a>
 
-{@render children()}
+<div class="h-screen text-content flex justify-center">
+	<FixedSection />
+	<div class="flex container lg:px-8 pointer-events-none items-start gap-y-5 shrink-0 z-10">
+		<div class="hidden lg:flex w-1/3 shrink-0 self-stretch"></div>
+		<div class="flex pointer-events-auto w-full lg:w-2/3">
+			{@render children()}
+		</div>
+	</div>
+</div>
