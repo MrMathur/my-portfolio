@@ -101,6 +101,12 @@ html {
 	opacity: 1;
 }
 
+/* Close tables with a bottom border so a following `---` divider doesn't read as
+   the table's last line, with the section spacing as a gap inside the table. */
+.prose tbody tr:last-child {
+	border-bottom-width: 1px;
+}
+
 /* Standalone images in project write-ups: rounded, shown in true color */
 .prose p:has(> img:only-child) {
 	width: fit-content;

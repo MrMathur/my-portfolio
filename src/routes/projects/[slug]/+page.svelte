@@ -37,9 +37,15 @@
 		</a>
 	{/if}
 
-	<div class="mt-10 rounded-lg overflow-hidden">
-		<img src={meta.thumbnail} alt="{meta.title} project thumbnail" class="block w-full aspect-video" />
-	</div>
+	{#if meta.cover}
+		<div class="mt-10 rounded-lg overflow-hidden">
+			{#if /\.(mp4|webm|mov)$/i.test(meta.cover)}
+				<video src={meta.cover} class="block w-full h-auto" autoplay muted loop playsinline></video>
+			{:else}
+				<img src={meta.cover} alt="{meta.title} cover image" class="block w-full h-auto" />
+			{/if}
+		</div>
+	{/if}
 
 	<article
 		class="prose prose-invert prose-lg mt-12 max-w-none prose-a:text-accent prose-headings:text-content prose-p:text-content-dim prose-li:text-content-dim prose-strong:text-content"

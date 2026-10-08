@@ -6,6 +6,8 @@ export interface ProjectMeta {
 	summary: string;
 	thumbnail: string;
 	thumbnailHover?: string;
+	// Image or video (.mp4/.webm/.mov) at the top of the project page; nothing shows if unset.
+	cover?: string;
 	tags: string[];
 	link?: string;
 	linkLabel?: string;
