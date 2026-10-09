@@ -1,5 +1,6 @@
 <script lang="ts">
 	import Hero from './Hero.svelte';
+	import TextLink from './TextLink.svelte';
 </script>
 
 {#snippet ext(href: string, text: string)}
@@ -37,5 +38,8 @@
 			<p> Outside research, I like making {@render ext('https://itch.io/profile/mrmathur', 'games')} and am an avid
 			{@render ext('https://en.wikipedia.org/wiki/Arsenal_F.C.', 'Arsenal fan')}.
 		</p>
+		<div class="mt-2">
+			<TextLink title="→ View Full CV" link="/arpitmathurresume.pdf" />
+		</div>
 	</div>
 </div>

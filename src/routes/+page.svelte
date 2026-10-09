@@ -11,16 +11,24 @@
 
 	let { data } = $props();
 
-	// Scroll spy: highlight the nav item for the section crossing the middle of the viewport.
+	// Scroll spy: highlight the last section whose top has passed the upper third of the viewport.
+	// The first section wins at the top of the page; the last one wins at the bottom.
 	onMount(() => {
-		const observer = new IntersectionObserver(
-			(entries) => {
-				for (const e of entries) if (e.isIntersecting) nav.active = e.target.id;
-			},
-			{ rootMargin: '-50% 0px -50% 0px' }
-		);
-		document.querySelectorAll('main section[id]').forEach((s) => observer.observe(s));
-		return () => observer.disconnect();
+		const sections = [...document.querySelectorAll<HTMLElement>('main section[id]')];
+		const update = () => {
+			const atBottom = innerHeight + scrollY >= document.documentElement.scrollHeight - 2;
+			if (atBottom) return (nav.active = sections.at(-1)!.id);
+			let active = sections[0].id;
+			for (const s of sections) if (s.getBoundingClientRect().top <= innerHeight / 3) active = s.id;
+			nav.active = active;
+		};
+		update();
+		addEventListener('scroll', update, { passive: true });
+		addEventListener('resize', update);
+		return () => {
+			removeEventListener('scroll', update);
+			removeEventListener('resize', update);
+		};
 	});
 </script>
 

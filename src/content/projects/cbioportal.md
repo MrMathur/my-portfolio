@@ -4,5 +4,5 @@ summary: "cBioChat brings LLM-driven natural-language interaction to cBioPortal.
 thumbnail: /thumbnails/thumb-cbiochat.png
 thumbnailHover: /thumbnails/thumb-cbiochat-hover.png
 tags: [LLMs, Human-AI Interaction, Visual Analytics]
-order: 2
+order: 5
 ---
