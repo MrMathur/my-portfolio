@@ -36,7 +36,7 @@ Today, these scores are used only by clinicians.
 
 ## 2. Clinician-Facing Interface
 
-> Morrison et al., *"It's Not Just for Trust: Designing for Emerging Uses of Explainable AI in Clinical Decision-Making,"* ACM Transactions on Computing for Healthcare, 2026. I contributed to development of the dashboard; I am not an author.
+> Morrison et al., *"It's Not Just for Trust: Designing for Emerging Uses of Explainable AI in Clinical Decision-Making,"* ACM Transactions on Computing for Healthcare, 2026.
 
 The **PHORA Dashboard** is a clinician-facing decision-support system designed through iterative prototyping with 18 PAH clinicians and then used as a design probe with 7 physicians. It shows patient variables and their trends, the risk prediction over time, **interactive "what-if" exploration** (partial-dependence bars that update together, with comparable saved scenarios), and treatment guideline recommendations.
 
